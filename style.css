@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (width>=800px) {
+  .grid_4col_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+  }
+  .billede4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  .billede1 {
+    grid-row: 1/3;
+  }
+}
